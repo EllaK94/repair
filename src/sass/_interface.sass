@@ -5,7 +5,17 @@ body
 .container
     width: 1170px
     margin: auto
-
+/* Адаптив на экранах меньше 1200px (все экраны до 1200px) */
+@media (max-width: 1200px) 
+    .container 
+        width: 960px
+/* Адаптив на экранах меньше 768px (все экраны до 768px) */
+@media (max-width: 768px)
+    .container 
+        max-width: 576px
+        width: 95%
+/* Адаптив для меньших версий - в блоке navbar */
+    
 .button 
     background-color: $main-color
     border: none

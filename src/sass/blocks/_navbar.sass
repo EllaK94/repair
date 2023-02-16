@@ -19,8 +19,24 @@
         margin-top: 10px
     &__button 
         margin-left: 28px
+/* Адаптив на экранах меньше 576px (все экраны до 576px), скрыли блок contacts */
+@media (max-width: 576px)
+    .navbar
+        &__contacts 
+            display: none
+@media (max-width: 320px)
+    .container 
+        width: 90%
+    .navbar
+        &__button 
+            padding: 15px 27px
+            margin-left: 10px
+            font:
+                size: 10px
+        &__logo 
+            img 
+                width: 91px
         
-
 .header 
     padding-top: 10px
     padding-bottom: 10px
