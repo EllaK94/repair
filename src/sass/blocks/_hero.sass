@@ -1,0 +1,65 @@
+.hero 
+    padding: 50px 0
+    &-block 
+        display: flex
+    &-text 
+        padding-right: 120px
+        flex-basis: 45%
+        &__title 
+            font-size: 39px
+            font-weight: 600
+            line-height: 55px
+            margin-bottom: 40px
+        &__subtitle 
+            font-size: 20px
+            margin-bottom: 70px
+            display: inline-block /* Чтобы применился отступ снизу */
+    &-list 
+        list-style: none
+        margin: 0
+        padding: 0
+        &__item 
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+        &__image 
+            width: 30px
+            height: 30px 
+            border: 2px solid $main-color
+            border-radius: 50%
+            margin-right: 30px
+            display: flex
+            justify-content: center
+            padding: 10px
+        &__text 
+            font-size: 14px
+            max-width: 300px
+@media (max-width: 1200px) 
+    .hero 
+        &-block 
+            flex-direction: column
+        &-list 
+            margin-bottom: 54px 
+            &__item 
+                margin-bottom: 20px
+            &__image 
+                margin-right: 15px
+        &-text 
+            padding-right: 10px
+@media (max-width: 768px) 
+    .hero 
+        &-text 
+            &__title 
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 15px
+            &__subtitle 
+                font-size: 16px
+                margin-bottom: 30px
+        &-list 
+            &__text 
+                font-size: 12px
+                max-width: 500px /* Добавила, чтобы строчки текста в листе растянулись по ширине */
+
+
+

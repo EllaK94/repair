@@ -19,12 +19,12 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 95%;
+    width: 90%;
   }
 }
 /* Адаптив для меньших версий - в блоке navbar */
 .button {
-  background-color: rgb(255, 210, 0);
+  background-color: #ffd200;
   border: none;
   border-radius: 10px;
   padding: 20px 30px;
@@ -79,4 +79,83 @@ body {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.hero {
+  padding: 50px 0;
+}
+.hero-block {
+  display: flex;
+}
+.hero-text {
+  padding-right: 120px;
+  flex-basis: 45%;
+}
+.hero-text__title {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+.hero-text__subtitle {
+  font-size: 20px;
+  margin-bottom: 70px;
+  display: inline-block;
+}
+.hero-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hero-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.hero-list__image {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.hero-list__text {
+  font-size: 14px;
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    flex-direction: column;
+  }
+  .hero-list {
+    margin-bottom: 54px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    max-width: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
