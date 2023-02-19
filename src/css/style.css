@@ -1,7 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Museo Sans Cyrl Light";
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl Bold";
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   color: #333333;
-  font-family: sans-serif;
+  font-family: "Museo Sans Cyrl Light", sans-serif;
+  font-weight: 300; /* Если не загрузится Museo, толщина родного шрифта будет такой */
 }
 
 .container {
@@ -28,8 +45,9 @@ body {
   border: none;
   border-radius: 10px;
   padding: 20px 30px;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   font-size: 13px;
-  font-weight: 700;
 }
 
 .navbar-block {
@@ -50,7 +68,8 @@ body {
   color: #333333;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 700;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   margin-top: 10px;
 }
 .navbar__button {
@@ -93,7 +112,8 @@ body {
 }
 .hero-text__title {
   font-size: 39px;
-  font-weight: 600;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   line-height: 55px;
   margin-bottom: 40px;
 }
