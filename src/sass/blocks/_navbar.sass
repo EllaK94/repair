@@ -1,3 +1,7 @@
+.header 
+    padding-top: 10px
+    padding-bottom: 7px
+
 .navbar
     &-block 
         display: flex
@@ -10,12 +14,14 @@
         display: flex
         flex-direction: column
         text-align: right
+    &__adress 
+        font-size: 13px
     &__phone 
         color: $text-color
         text-decoration: none
         font-size: 20px
         +bold
-        margin-top: 10px
+        margin-top: 6px
     &__button 
         margin-left: 28px
 /* Адаптив на экранах меньше 576px (все экраны до 576px), скрыли блок contacts */
@@ -34,7 +40,4 @@
         &__logo 
             img 
                 width: 91px
-        
-.header 
-    padding-top: 10px
-    padding-bottom: 10px
+                

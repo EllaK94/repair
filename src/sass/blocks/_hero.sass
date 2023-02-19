@@ -1,18 +1,20 @@
 .hero 
     padding: 50px 0
+    background-color: #f5f5f5
     &-block 
         display: flex
     &-text 
         padding-right: 120px
         flex-basis: 45%
         &__title 
-            font-size: 39px
+            font-size: 41px
             +bold
             line-height: 55px
-            margin-bottom: 40px
+            margin-bottom: 37px
         &__subtitle 
             font-size: 20px
-            margin-bottom: 70px
+            +bold
+            margin-bottom: 69px
             display: inline-block /* Чтобы применился отступ снизу */
     &-list 
         list-style: none
@@ -21,19 +23,20 @@
         &__item 
             display: flex
             align-items: center
-            margin-bottom: 25px
+            margin-bottom: 24px
         &__image 
-            width: 30px
-            height: 30px 
+            width: 20px
+            height: 20px 
             border: 2px solid $main-color
             border-radius: 50%
             margin-right: 30px
             display: flex
             justify-content: center
-            padding: 10px
+            padding: 8px
         &__text 
             font-size: 14px
-            max-width: 300px
+            max-width: 250px
+            line-height: 1.7
 @media (max-width: 1200px) 
     .hero 
         &-block 

@@ -44,10 +44,15 @@ body {
   background-color: #ffd200;
   border: none;
   border-radius: 10px;
-  padding: 20px 30px;
+  padding: 18px 30px;
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   font-size: 13px;
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 
 .navbar-block {
@@ -64,13 +69,16 @@ body {
   flex-direction: column;
   text-align: right;
 }
+.navbar__adress {
+  font-size: 13px;
+}
 .navbar__phone {
   color: #333333;
   text-decoration: none;
   font-size: 20px;
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .navbar__button {
   margin-left: 28px;
@@ -95,13 +103,9 @@ body {
     width: 91px;
   }
 }
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 .hero-block {
   display: flex;
@@ -111,15 +115,17 @@ body {
   flex-basis: 45%;
 }
 .hero-text__title {
-  font-size: 39px;
+  font-size: 41px;
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 .hero-text__subtitle {
   font-size: 20px;
-  margin-bottom: 70px;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
+  margin-bottom: 69px;
   display: inline-block;
 }
 .hero-list {
@@ -130,21 +136,22 @@ body {
 .hero-list__item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .hero-list__image {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #ffd200;
   border-radius: 50%;
   margin-right: 30px;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 8px;
 }
 .hero-list__text {
   font-size: 14px;
-  max-width: 300px;
+  max-width: 250px;
+  line-height: 1.7;
 }
 
 @media (max-width: 1200px) {
