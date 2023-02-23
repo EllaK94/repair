@@ -48,4 +48,43 @@
         text-decoration: none
         color: $text-color
         +bold
+@media (max-width: 1200px) 
+    .offer 
+        &__input 
+            width: 100%
+        &__description 
+            display: inline
+        &__text
+            &:first-child
+                margin-right: 0
+    
+    .section 
+        padding: 50px 0
+
+@media (max-width: 930px) 
+    .offer 
+        &-block 
+            padding-right: 60px
+        &__input
+            &:first-child 
+                margin-right: 0
+
+/*  940px, потому что поля появляются над картинкой в этот момент*/
+@media (max-width: 768px) 
+    .offer 
+        background: none
+        &:before 
+            content: ''
+            width: 0
+            height: 0
+        &-block 
+            width: 100%
+            padding-right: 0
+        &__title 
+            max-width: 100%
+        &__input
+            &:first-child 
+                margin-right: 0
+
+
     

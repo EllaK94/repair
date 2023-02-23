@@ -25,25 +25,31 @@ body {
   font-weight: 300; /* Если не загрузится Museo, толщина родного шрифта будет такой */
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 1170px;
   margin: auto;
 }
-
-/* Адаптив на экранах меньше 1200px (все экраны до 1200px) */
 @media (max-width: 1200px) {
   .container {
-    width: 960px;
-  }
-}
-/* Адаптив на экранах меньше 768px (все экраны до 768px) */
-@media (max-width: 768px) {
-  .container {
-    max-width: 576px;
+    max-width: 960px;
     width: 90%;
   }
 }
-/* Адаптив для меньших версий - в блоке navbar */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .button {
   background-color: #ffd200;
   border: none;
@@ -120,8 +126,8 @@ body {
   }
 }
 @media (max-width: 320px) {
-  .container {
-    width: 90%;
+  .navbar__contacts {
+    display: none;
   }
   .navbar__button {
     padding: 15px 27px;
@@ -140,7 +146,7 @@ body {
   display: flex;
 }
 .hero-text {
-  padding-right: 120px;
+  padding-right: 100px;
   flex-basis: 55%;
 }
 .hero-text__title {
@@ -179,11 +185,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
 }
 .hero-list__text {
   font-size: 14px;
-  max-width: 250px;
+  max-width: 300px;
   line-height: 1.7;
 }
 
@@ -192,16 +197,24 @@ body {
     flex-direction: column;
   }
   .hero-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 54px;
   }
   .hero-list__item {
+    width: 30%;
     margin-bottom: 20px;
   }
   .hero-list__image {
     margin-right: 15px;
   }
   .hero-text {
-    padding-right: 10px;
+    padding-right: 0;
+  }
+  .hero-image {
+    align-self: center;
   }
 }
 @media (max-width: 768px) {
@@ -214,9 +227,12 @@ body {
     font-size: 16px;
     margin-bottom: 30px;
   }
+  .hero-list__item {
+    width: 100%;
+  }
   .hero-list__text {
+    max-width: 90%;
     font-size: 12px;
-    max-width: 500px;
   }
 }
 .offer {
@@ -282,4 +298,48 @@ body {
   color: #333333;
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+  }
+  .offer__description {
+    display: inline;
+  }
+  .offer__text:first-child {
+    margin-right: 0;
+  }
+  .section {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 930px) {
+  .offer-block {
+    padding-right: 60px;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
+}
+/*  940px, потому что поля появляются над картинкой в этот момент*/
+@media (max-width: 768px) {
+  .offer {
+    background: none;
+  }
+  .offer:before {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    max-width: 100%;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

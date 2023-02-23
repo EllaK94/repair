@@ -4,7 +4,7 @@
     &-block 
         display: flex
     &-text 
-        padding-right: 120px
+        padding-right: 100px
         flex-basis: 55%
         &__title 
             font-size: 41px
@@ -35,23 +35,30 @@
             display: flex
             justify-content: center
             align-items: center /* Выравнивает картинки и кружочки между собой */
-            padding: 8px
         &__text 
             font-size: 14px
-            max-width: 250px
+            max-width: 300px
             line-height: 1.7
 @media (max-width: 1200px) 
     .hero 
         &-block 
             flex-direction: column
         &-list 
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: center
             margin-bottom: 54px 
             &__item 
+                width: 30%
                 margin-bottom: 20px
             &__image 
                 margin-right: 15px
         &-text 
-            padding-right: 10px
+            padding-right: 0
+        &-image 
+            align-self: center /* Выравнивает фото по центру */
+            
 @media (max-width: 768px) 
     .hero 
         &-text 
@@ -63,9 +70,11 @@
                 font-size: 16px
                 margin-bottom: 30px
         &-list 
+            &__item 
+                width: 100%
             &__text 
+                max-width: 90%
                 font-size: 12px
-                max-width: 500px /* Добавила, чтобы строчки текста в листе растянулись по ширине */
 
 
 

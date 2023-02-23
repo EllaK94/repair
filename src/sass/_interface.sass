@@ -4,20 +4,20 @@
 body 
     color: $text-color
     +regular
+
+img 
+    max-width: 100% /* Картинки (большие) на сайте не вываливаются из контейнера */
     
 .container
     width: 1170px
     margin: auto
-/* Адаптив на экранах меньше 1200px (все экраны до 1200px) */
-@media (max-width: 1200px) 
-    .container 
-        width: 960px
-/* Адаптив на экранах меньше 768px (все экраны до 768px) */
-@media (max-width: 768px)
-    .container 
-        max-width: 576px
+    @media (max-width: 1200px) 
+        max-width: 960px
         width: 90%
-/* Адаптив для меньших версий - в блоке navbar */
+    @media (max-width: 768px)
+        width: 90%
+    @media (max-width: 320px) 
+        width: 90%
     
 .button 
     background-color: $main-color
