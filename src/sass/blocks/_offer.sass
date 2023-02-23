@@ -1,0 +1,51 @@
+.offer 
+    background: url('../img/offer/offer-bg.png') no-repeat
+    background-position: center right
+    /* Фон заполняет страницу */
+    background-size: contain
+    position: relative
+    &:before
+        content: ''
+        background-color: #fff
+        width: 50% /* Половина от родительского элемента .offer с position: relative */
+        height: 100% /* 100% высоты от родительского элемента .offer с position: relative */
+        position: absolute 
+        top: 0
+        left: 0
+        /* Чтобы пустой элемент приклеился к левому верхнему углу контейнера .offer */
+    &-block 
+        width: 50%
+        padding-right: 90px
+        position: relative /* Чтобы блок вышел вперед */
+    &__title 
+        max-width: 350px
+        line-height: 35px 
+        margin-bottom: 24px
+    &__subtitle 
+        max-width: 250px
+        line-height: 25px
+        margin-bottom: 30px
+    &__form 
+        margin-bottom: 30px
+    &__input 
+        margin-bottom: 28px
+        width: 240px
+        &:first-child
+            margin-right: 10px
+    &__button 
+        width: 100%
+        min-height: 70px
+        font-size: 16px
+    &__description 
+        display: flex
+        justify-content: space-between
+    &__text 
+        font-size: 15px
+        line-height: 24px
+        &:first-child
+            margin-right: 60px
+    &__phone 
+        text-decoration: none
+        color: $text-color
+        +bold
+    

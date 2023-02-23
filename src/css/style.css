@@ -15,6 +15,10 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #333333;
   font-family: "Museo Sans Cyrl Light", sans-serif;
@@ -48,6 +52,31 @@ body {
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   font-size: 13px;
+}
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+.section-title {
+  font-size: 24px;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
+  margin-top: 0;
+}
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 .header {
@@ -112,7 +141,7 @@ body {
 }
 .hero-text {
   padding-right: 120px;
-  flex-basis: 45%;
+  flex-basis: 55%;
 }
 .hero-text__title {
   font-size: 41px;
@@ -138,14 +167,18 @@ body {
   align-items: center;
   margin-bottom: 24px;
 }
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
 .hero-list__image {
-  width: 20px;
-  height: 20px;
+  min-width: 40px;
+  min-height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50%;
   margin-right: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 8px;
 }
 .hero-list__text {
@@ -185,4 +218,68 @@ body {
     font-size: 12px;
     max-width: 500px;
   }
+}
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  /* Фон заполняет страницу */
+  background-size: contain;
+  position: relative;
+}
+.offer:before {
+  content: "";
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Чтобы пустой элемент приклеился к левому верхнему углу контейнера .offer */
+}
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+.offer__title {
+  max-width: 350px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+.offer__subtitle {
+  max-width: 250px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.offer__form {
+  margin-bottom: 30px;
+}
+.offer__input {
+  margin-bottom: 28px;
+  width: 240px;
+}
+.offer__input:first-child {
+  margin-right: 10px;
+}
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-size: 16px;
+}
+.offer__description {
+  display: flex;
+  justify-content: space-between;
+}
+.offer__text {
+  font-size: 15px;
+  line-height: 24px;
+}
+.offer__text:first-child {
+  margin-right: 60px;
+}
+.offer__phone {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
 }/*# sourceMappingURL=style.css.map */
