@@ -26,6 +26,7 @@ img
     padding: 18px 30px
     +bold
     font-size: 13px 
+    outline: none /* Убирает черную дефолтную обводку ссылок, кнопок и т.п. */
     &:hover 
         background-color: lighten($main-color, 10%)
         cursor: pointer
@@ -45,3 +46,6 @@ img
     padding: 20px 26px
     font-size: 15px
     border-radius: 5px
+    &:focus
+        outline: none /* Без этого не сработает оранжевая обводка инпута */
+        border: 2px solid $input-active
