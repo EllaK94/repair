@@ -36,3 +36,50 @@ close.addEventListener('click', function() {
 Поэтому при клике на крестик окно пропадает. */
 
 /* Можно отслеживать наведение на кнопку, клик, скролл, нажатие на клавиатуре кнопки */
+
+// Усложненное задание
+/* setTimeout - срабатывает только один раз */
+/* Вариант 1 */
+/* const time = () => {
+  modal.classList.remove('modal_active');
+};
+
+setTimeout(time, 7000); */
+
+/* Вариант 2 */
+/* setTimeout(
+  () => {
+  modal.classList.remove('modal_active');
+}, 
+  7000
+); */
+
+/* Вариант 3 */
+/* setInterval - срабатывает циклично, постоянно (не нужно обновлять страницу) */
+setInterval(
+  () => modal.classList.remove('modal_active'),
+  7000
+);
+
+/* Вариант 4 
+Вместо 
+
+close.addEventListener('click', function() {
+  modal.classList.remove('modal_active');
+}); 
+
+задать функцию с именем modalClose
+
+function modalClose() {
+  modal.classList.remove('modal_active');
+ }
+ 
+ а потом использовать ее во всех других местах 
+ 
+close.addEventListener('click', modalClose);
+
+setTimeout(modalClose, 7000);  
+или 
+setInterval(modalClose, 7000);
+
+ */
