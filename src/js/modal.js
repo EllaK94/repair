@@ -1,4 +1,4 @@
-$(document).ready(function() { // Проверяем, загрузилрсь ли дерево страницы, и если да - запускаем функцию
+$(document).ready(function() { // Проверяем, загрузилось ли дерево страницы, и если да - запускаем функцию
   var button = $('#button'); // Вместо var button = document.querySelector('#button');
   var modal = $('#modal');
   var close = $('#close');

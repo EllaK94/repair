@@ -73,6 +73,7 @@ img {
   font-family: "Museo Sans Cyrl Bold", sans-serif;
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   margin-top: 0;
+  text-align: center;
 }
 .section-subtitle {
   display: block;
@@ -102,6 +103,9 @@ img {
 }
 .arrow-up:hover {
   opacity: 1;
+}
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -280,6 +284,7 @@ img {
   max-width: 350px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 .offer__subtitle {
   max-width: 250px;
@@ -387,4 +392,25 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

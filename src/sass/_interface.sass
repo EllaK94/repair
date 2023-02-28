@@ -37,6 +37,7 @@ img
         font-size: 24px
         +bold
         margin-top: 0
+        text-align: center // Выровняли в интерфейсе, т.к. везде кроме первой секции выравнен по центру
     &-subtitle 
         display: block
         font-size: 16px
@@ -62,3 +63,7 @@ img
         z-index: 1000 
         &:hover 
             opacity: 1 
+    &s // Настройки для .arrows - блок в слайдере со стрелками 
+        &__left, &__right 
+            &:hover
+                cursor: pointer
