@@ -464,6 +464,11 @@ img {
   transition: 0.2s;
 }
 
+@media (max-width: 1200px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
 .modal {
   position: fixed;
   left: 0;
