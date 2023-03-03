@@ -24,3 +24,5 @@ $(document).ready(function() {
       ]
   });
 });
+
+/* Инициализация слайдера от Slick.js*/
