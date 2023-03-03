@@ -1,0 +1,61 @@
+.price
+    &__title 
+        margin: auto // Выравнивает заголовок по центру контейнера 
+        margin-bottom: 58px
+    &__subtitle 
+        text-align: center
+        margin-bottom: 59px 
+    &__card 
+        margin-bottom: 30px
+
+.card 
+    text-align: center 
+    border: 1px solid $card-border 
+    transition: 0.2s // Плавность появления тени при наведении
+    &:hover 
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1) // При наведении на карточку, появляется тень вокруг нее
+        .card__image:before // Что-то накосячили с классами в уроке, хз как исправить, пришлось писать так
+            opacity: 1 // Прозрачность - при наведении виден элемент :before с градиентом
+    &s 
+        display: flex 
+        justify-content: space-between 
+        flex-wrap: wrap // Элементы переносятся на новую строку, если не хватает места в строке
+    &__text 
+        padding-top: 40px
+        padding-bottom: 40px
+    &__image 
+        position: relative 
+        &:before 
+            content: ''
+            position: absolute // Приклеен к левому верхнему краю родителя
+            left: 0 
+            top: 0 
+            width: 100% // Занимает всю ширину и высоту родителя
+            height: 100% 
+            background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%) // Градиент при наведении
+            opacity: 0 // Прозрачность - не видно по умолчанию 
+            transition: 0.2s // Плавное появление градиента
+    &__photo // Добавили этот класс и display: block именно для картинки, чтобы не появлялся отступ снизу под картинкой при появляении градиента
+        display: block 
+    &__title 
+        margin-top: 0
+    &__link 
+        display: inline-block 
+        +bold 
+        text-decoration: none 
+        color: $text-color 
+        position: relative
+        &:hover 
+            &:after // При наведении на ссылку меняется вид ::after (черты под ссылкой)
+                height: 12px
+                z-index: -1 // Чтобы черта была за текстом, а не перед ним
+        &:after 
+            content: '' 
+            width: 100% 
+            height: 3px 
+            background-color: $main-color
+            display: block // Чтобы отобразился под ссылкой (до этого был скрыт) 
+            position: absolute // Благодаря этому и настройкам bottom, left 0 - черта прилипла к тексту ссылки
+            bottom: -4px // Черта немного отступила от ссылки
+            left: 0
+            transition: 0.2s // Добавляет плавный переход при наведении (анимация черты)
