@@ -110,6 +110,24 @@ img {
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .header {
   padding-top: 10px;
   padding-bottom: 7px;
@@ -180,6 +198,8 @@ img {
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   line-height: 55px;
   margin-bottom: 37px;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 .hero-text__subtitle {
   font-size: 20px;
@@ -187,6 +207,8 @@ img {
   font-weight: 700; /* Если не загрузится Museo, толщина родного шрифта будет такой */
   margin-bottom: 69px;
   display: inline-block;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 .hero-list {
   list-style: none;
@@ -197,6 +219,17 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+}
+.hero-list__item-1 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+.hero-list__item-2 {
+  animation: fadeIn 2s 0.8s;
+}
+.hero-list__item-3 {
+  animation: fadeIn 2s 1.2s;
 }
 .hero-list__item:last-child {
   margin-bottom: 0;
@@ -215,6 +248,9 @@ img {
   font-size: 14px;
   max-width: 300px;
   line-height: 1.7;
+}
+.hero-image {
+  animation: fadeIn 2.5s 1.7s;
 }
 
 @media (max-width: 1200px) {
@@ -281,6 +317,7 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
+  animation: fadeInLeft 2s 1s;
 }
 .offer__title {
   max-width: 350px;
@@ -375,6 +412,7 @@ img {
 .portfolio__title {
   margin: auto;
   margin-bottom: 80px;
+  animation: fadeIn 2s;
 }
 .portfolio__arrows {
   max-width: 120px;
@@ -387,14 +425,34 @@ img {
 .slider__image {
   margin: auto;
 }
+.slider__item-1 {
+  animation: fadeIn 2s 0.4s;
+}
+.slider__item-2 {
+  animation: fadeIn 2s 0.8s;
+}
+.slider__item-3 {
+  animation: fadeIn 2s 1.2s;
+}
+.slider__item-4 {
+  animation: fadeIn 2s 1.6s;
+}
+.slider__item-5 {
+  animation: fadeIn 2s 2s;
+}
+.slider__item-6 {
+  animation: fadeIn 2s 2.4s;
+}
 
 .price__title {
   margin: auto;
   margin-bottom: 58px;
+  animation: fadeIn 2s;
 }
 .price__subtitle {
   text-align: center;
   margin-bottom: 59px;
+  animation: fadeIn 2s 0.2s;
 }
 .price__card {
   margin-bottom: 30px;
@@ -410,6 +468,26 @@ img {
 }
 .card:hover .card__image:before {
   opacity: 1;
+}
+.card-1 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+.card-2 {
+  animation: fadeIn 2s 0.8s;
+}
+.card-3 {
+  animation: fadeIn 2s 1.2s;
+}
+.card-4 {
+  animation: fadeIn 2s 1.6s;
+}
+.card-5 {
+  animation: fadeIn 2s 2s;
+}
+.card-6 {
+  animation: fadeIn 2s 2.4s;
 }
 .cards {
   display: flex;
